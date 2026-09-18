@@ -1,8 +1,14 @@
+:root {
+    --color: darkblue;
+    --border: 1px solid rgb(0 0 0 / 0.2);
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--color);
     padding: 10px;
 }
 
+/* thatil be the first comment */
 nav a {
     color: white;
     display: block;
@@ -10,7 +16,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color);
 }
 
 img {
@@ -32,15 +38,15 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border);
     padding: 5px;
-    box-shadow: rgb(0 0 0 / 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.2);
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border);
     padding: 1rem;
     background-color: #eee;
     color: #333;
