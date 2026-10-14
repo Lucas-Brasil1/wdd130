@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -74,6 +74,10 @@ section img {
     align-items: center;
     gap: 20px;
     background-color: rgb(255, 201, 53);
+    box-shadow: 3px 3px 3px black;
+}
+.history p{
+    min-width: 0;
 }
 .history h2 {
   grid-column: 2;
@@ -85,15 +89,18 @@ section img {
 .history p:nth-of-type(1) {
   grid-column: 1;
   grid-row: 1 / 3;
+  overflow-wrap: break-word;
 }
 .history img {
   grid-column: 2;
   grid-row: 2;
   width: 250px;
+  box-shadow: 3px 3px 3px black
 }
 .history p:nth-of-type(2) {
   grid-column: 3;
   grid-row: 1 / 3;
+  overflow-wrap: break-word;
 }
 
 .adventure {
@@ -103,6 +110,7 @@ section img {
     background-color: chocolate;
     max-height: 1000px;
     color: #ffffff;
+    box-shadow: 3px 3px 3px black
 }
 .adventure h2{
     grid-column: 1 / 6;
@@ -114,7 +122,9 @@ section img {
 .adventure img{
     display: block;
     width: 100%;
-    height: auto;
+    height: 110px;
+    object-fit: cover;
+    
 }
 footer {
     display: flex;
@@ -162,4 +172,139 @@ figcaption {
     width: 125px;
     margin: auto;
     box-shadow: 0 0 5px var(--accent2-color);
+}
+.trip{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+}
+.trip img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+}
+.availability{
+    background-image: url(/wdd130/wwr/images/equipaments.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 3px black;
+    width: 100%;
+}
+table{
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    margin: 16px auto;
+    max-width: 100%;
+    box-shadow:3px 3px 3px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px 12px ;
+    padding: 8PX;
+    text-align: center;
+    background-color: white;
+}
+thead tr, tfoot tr {
+    background-color: var(--primary-color);
+    color: rgb(6, 4, 4);
+    font-weight: 700;
+}
+caption{
+    margin: 10px;
+    background-color:rgb(253, 253, 255);
+    color: black;
+}
+.availability h1{
+    text-align: center;
+    color: yellow;
+    text-shadow: 10px 10px 10px chocolate;
+}
+form{
+    display: grid;
+    gap: 0.75rem;
+}
+
+main h1, address{
+    text-align: center;
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+.contact-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.staff{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.staff h2{
+    grid-column: 1 / 4;
+}
+
+.staff img{
+    width: 100%;
+    height: auto;
+}
+button{
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+}
+
+.purp-offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    color: black;
+    width: 100%;
+    background-color:darkgrey;  
+}
+.purpuse h2{
+    text-align: center;
+    margin: 10px;
+}
+.offerings h2{
+    text-align: center;
+}
+.purpuse img{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.offerings img{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.purpuse p{
+    background-color: white;
+    padding: 1rem;
+    margin: 0;
+}
+.offerings p{
+    background-color: white;
+    padding: 1rem;
+    margin: 0;
+}
+.newsletter-form{
+    width: 300px;
 }
